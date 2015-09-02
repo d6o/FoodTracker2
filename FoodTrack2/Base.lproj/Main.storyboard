@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -41,6 +42,13 @@
                                     <constraint firstAttribute="trailing" secondItem="pxz-Cw-hmc" secondAttribute="trailing" id="pwV-gs-Fkf"/>
                                 </constraints>
                             </stackView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="kfH-OT-zhx">
+                                <rect key="frame" x="20" y="168" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kfH-OT-zhx" secondAttribute="height" multiplier="1:1" id="0xS-kc-AqG"/>
+                                    <constraint firstAttribute="width" secondItem="kfH-OT-zhx" secondAttribute="height" multiplier="1:1" id="JYA-jh-lWJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -55,4 +63,7 @@
             <point key="canvasLocation" x="380" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="352" height="264"/>
+    </resources>
 </document>
