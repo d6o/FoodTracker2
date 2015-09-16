@@ -1,7 +1,6 @@
 # FoodTracker2
 Swift getting started xCode 7 beta 6
 
-
 New readme file to the project!
 
 This is a getting started aplication from Apple to new language Swift 
